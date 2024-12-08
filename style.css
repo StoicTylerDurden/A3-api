@@ -1,0 +1,41 @@
+/* Table styling */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+/* Styling for header cells */
+table th {
+    font-weight: bold;
+    background-color: #f8f9fa;  /* Light grey for header background */
+    padding: 1px;
+    text-align: left;
+}
+
+/* This gets overrided by pico */
+table tr.row:nth-child(odd) {
+    background-color: #bbbbbb;  /* Light grey for odd rows */
+}
+
+/* Responsive design for tablet view */
+@media (max-width: 768px) { 
+    table {
+        font-size: 14px;
+    }
+    table th, table td {
+        padding: 6px;
+    }
+}
+
+/* For mobile view */
+@media (max-width: 480px) { 
+    table {
+        font-size: 12px;
+        width: 100%; 
+    }
+    table th, table td {
+        padding: 4px;
+    }
+}
